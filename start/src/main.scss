@@ -1,0 +1,176 @@
+//main.scss - the mother of our sass
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/*html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}*/
+
+
+/*brukt kodeeksempler fra forelesning*/
+#root{
+    --border: 2px solid #e1e1e1;
+    --lightblue: #25dfe6;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #b4b4b4;
+    --lightgray: #f5f5f5;
+    --darkgray: #707070;
+    --maxwidth: 1200px;
+    --rootsize: 20px;
+}
+
+body {
+    font-size: var(--rootsize);
+    font-family: Arial;
+    color: var(--darkgray);
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+
+.textCont {
+    display: flex;
+    border-style: solid;
+    border-color: var(--gray);
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 30rem;
+    padding-bottom: 10rem;  
+    border-top: var(--lightblue);
+    border-top: 0px;
+    box-shadow: 0 -5px 0 0 var(--lightblue);
+    color: var(--darkgray);
+    
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    border: var(--border);
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+.header a{
+    text-decoration: none;
+    
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+#nav span{
+    padding: .5rem 1rem;
+    margin-right: .5rem;
+    display: inline-block;
+    border: var(--border);
+    background-color: var(--lightGray);
+    color: var(--darkgray);
+    
+}
+
+#nav span.active {
+    background-color: var(--lightblue);
+    border-color: var(--lightblue);
+    color: white;
+    border-style: solid;
+}
+
+
+.article h2 {
+    text-transform: uppercase;
+}
+
+#links a:link {
+    color: var(--lightblue);
+    text-decoration: none;
+    
+  }
+
+h1 a:link {
+    text-decoration: none;
+}
+
+nav span:not(#links):hover  {
+  background-color: var(--lightblue);
+  border-style: solid;
+  border-color: var(--lightblue);
+  color: var(--white);
+  }
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    width: auto;
+    border-style: ridge;
+    border-color: gray;
+    border-width: 1px;
+    
+}
+
+h1 span{
+    color: var(--darkgray);
+}
+
+#links {
+    display: flex;
+    font-size: x-large;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.25rem;
+    
+}
+#links span {
+    width: auto;
+    height: fit-content;
+    border: var(--border);
+    margin-right: 1rem;
+    padding: 1.2rem;
+    background-color: var(--lightgray);
+    border-bottom: var(--lightblue);
+    
+}
+
+.homeicon {
+    width: 2rem;
+}
+
+
+.navlink {
+    background-color: var(--white);
+}
+a:link {
+    color: var(--lightblue);}
+
+a:hover {
+    color: var(--darkgray);
+      }
+.textCont a:visited {
+    color: var(--gray);
+      }
+a:active {
+    color: var(--darkgray);
+  }
