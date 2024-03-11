@@ -1,15 +1,18 @@
-import './App.css';
-import './css/main.css';
-import NavBar from './components/NavBar'
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import Innhold from './components/Innhold'
 
 function App() {
-  return (
-    <div className="conteiner">
 
-      <NavBar/>
-      
-    </div>
-  );
+const [amount, setAmount] = useState(0)
+const [category, setCategory] = useState("Ninjago")
+const [cart, setCart] = useState([])
+
+  return (
+        <>
+        </>
+  )
 }
 
-export default App;
+export default App

@@ -28,5 +28,7 @@ export default function NavBar() {
       </BrowserRouter>        
     );
 }
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<NavBar />);
+*/
