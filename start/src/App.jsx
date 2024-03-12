@@ -1,32 +1,27 @@
 // App.jsx
-
-import React, { useState } from 'react';
-import ResourceList from './components/ResourceList';
+import { useState } from 'react';
+import ResourceList from './components/ResourceList'
+import Layout from './components/Layout'
+import { Route, Routes} from 'react-router-dom'
 import './styles/styles.scss'; // Import the main SCSS file
 
 function App() {
-  const [currentCategory, setCurrentCategory] = useState(null);
+  const [Resources, setResources] = useState([]);
 
-  const handleCategoryClick = (category) => {
-    setCurrentCategory(category);
-  };
 
-  return (
-    <div>
-      <h1>Resource Viewer</h1>
-      <nav>
-        <ul>
-          <li><button onClick={() => handleCategoryClick(null)}>All</button></li>
-          <li><button onClick={() => handleCategoryClick('html')}>HTML</button></li>
-          <li><button onClick={() => handleCategoryClick('css')}>CSS</button></li>
-          <li><button onClick={() => handleCategoryClick('javascript')}>JavaScript</button></li>
-          <li><button onClick={() => handleCategoryClick('react')}>React</button></li>
-          <li><button onClick={() => handleCategoryClick('headless-cms')}>Headless CMS</button></li>
-        </ul>
-      </nav>
-      <ResourceList currentCategory={currentCategory} />
-    </div>
-  );
-}
+
+    return (
+      <Layout>
+          <Routes>
+              
+              
+              
+              <Route path=":slug" element={<ResourceList />}/>
+              
+          </Routes>
+          </Layout>
+
+    )
+  }
 
 export default App;

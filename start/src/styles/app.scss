@@ -16,7 +16,7 @@ body{
 /*Navigasjonsbaren:*/
 nav{
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 2000px;
 }
 
 nav ul{
@@ -49,7 +49,7 @@ main{
     justify-content: flex-start;
     justify-self: center;
     flex-wrap: wrap;
-    max-width: 920px;
+    max-width: 1500px;
     background-color: var(--white);
     height: fit-content;
     padding: 2rem;
@@ -67,3 +67,31 @@ main p{
 main ul li{
     width: 100%;
 }
+
+// styles.scss
+
+// styles.scss
+
+// styles.scss
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content-container {
+    width: 100%; // Adjust the width as needed
+    max-width: 2000px; // Adjust the maximum width as needed
+    max-height: 90%;
+    border: 1px solid #ccc; // Add border
+    border-radius: 10px; // Add border radius for rounded corners
+    padding: 20px; // Add padding inside the box
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Add box shadow for depth
+    margin: auto; // Center horizontally
+    margin-left: 20%;
+  }
+  
+  
+  
